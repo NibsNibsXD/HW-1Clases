@@ -80,25 +80,10 @@ private Multa[] multas;
                 montoPendiente += multas[i].getMontoAPagar();
             }
         }
-        JOptionPane.showMessageDialog(this, "Cantidad de Multas generadas: " + contadorMultas + "\n Cantidad de Multas Pagadas: " + multasPagadas + " -- con un monto en Lps " + montoPagado + "\n Cantidad de Multas pendientes por pagar: " + multasPendientes + "-- con un monto en Lps " + montoPendiente);
-        System.out.println("Cantidad de Multas generadas: " + contadorMultas);
-        System.out.println("Cantidad de Multas Pagadas: " + multasPagadas + " con un monto en Lps " + montoPagado);
-        System.out.println();
+        JOptionPane.showMessageDialog(this, "Cantidad de Multas generadas: " + contadorMultas + "\n Cantidad de Multas Pagadas: " + multasPagadas + " -- con un monto en Lps " + montoPagado + "\n Cantidad de Multas pendientes por pagar: " + multasPendientes + " -- con un monto en Lps " + montoPendiente);
     }
 
     // Método main para probar la clase Transito
-    public static void main(String[] args) {
-        Transito transito = new Transito();
-        
-        transito.agregarMulta(123, "Juan Perez", "GRAVE");
-        transito.agregarMulta(456, "Maria Gomez", "MEDIO");
-        transito.agregarMulta(789, "Carlos Lopez", "LEVEE"); // Tipo no válido, se asignará LEVE
-
-        transito.imprimirMultas();
-
-        transito.pagarMulta(123);
-        transito.pagarMulta(999); // Código no existente
-
-        transito.imprimirEstadisticas();
-    }
+    
+    
 }
